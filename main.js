@@ -17,3 +17,19 @@ function factorialize(num) {
   }
   
   factorialize(5);
+
+  // Own properties
+  function Bird(name) {
+    this.name = name;
+    this.numLegs = 2;
+  }
+  
+  let canary = new Bird("Tweety");
+  let ownProps = [];
+  // Змініть код лише під цим рядком
+  for (let property in canary) {
+    if(canary.hasOwnProperty(property)) {
+      ownProps.push(property);
+    }
+  }
+  
