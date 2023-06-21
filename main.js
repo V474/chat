@@ -74,3 +74,22 @@ Animal.prototype = {
     console.log("nom nom nom");
   }
 };
+
+
+//Supertype for all animals
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+// Змініть код лише під цим рядком
+
+let duck = Object.create(Animal.prototype); 
+duck.name = "duck";
+
+let beagle = Object.create(Animal.prototype); 
+beagle.name = "beagle";
