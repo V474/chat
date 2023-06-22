@@ -93,3 +93,21 @@ duck.name = "duck";
 
 let beagle = Object.create(Animal.prototype); 
 beagle.name = "beagle";
+
+//Child`s prototype
+
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Dog() { }
+
+// Змініть код лише під цим рядком
+Dog.prototype = Object.create(Animal.prototype);
+
+let beagle = new Dog();
