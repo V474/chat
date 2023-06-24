@@ -111,3 +111,16 @@ function Dog() { }
 Dog.prototype = Object.create(Animal.prototype);
 
 let beagle = new Dog();
+
+//filteruyyyyyyyyy
+Array.prototype.myFilter = function(callback) {
+  const newArray = [];
+  // Змініть код лише під цим рядком
+ for (let i = 0; i < this.length; i++) {
+    if (callback(this[i], i, this)) {
+      newArray.push(this[i]);
+    }
+  }
+  // Змініть код лише над цим рядком
+  return newArray;
+};
