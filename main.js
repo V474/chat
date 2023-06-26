@@ -124,3 +124,9 @@ Array.prototype.myFilter = function(callback) {
   // Змініть код лише над цим рядком
   return newArray;
 };
+
+//Slice
+
+function sliceArray(anim, beginSlice, endSlice) {
+  return anim.slice(beginSlice, endSlice);
+}
