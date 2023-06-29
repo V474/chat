@@ -130,3 +130,14 @@ Array.prototype.myFilter = function(callback) {
 function sliceArray(anim, beginSlice, endSlice) {
   return anim.slice(beginSlice, endSlice);
 }
+
+//Splice
+function nonMutatingSplice(cities) {
+  // Змініть код лише під цим рядком
+  return cities.slice(0, 3);
+
+  // Змініть код лише над цим рядком
+}
+
+const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+nonMutatingSplice(inputCities);
