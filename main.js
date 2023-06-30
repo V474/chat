@@ -141,3 +141,15 @@ function nonMutatingSplice(cities) {
 
 const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
 nonMutatingSplice(inputCities);
+
+//Concat
+function nonMutatingConcat(original, attach) {
+  // Змініть код лише під цим рядком
+  return original.concat(attach);
+
+  // Змініть код лише над цим рядком
+}
+
+const first = [1, 2, 3];
+const second = [4, 5];
+nonMutatingConcat(first, second);
