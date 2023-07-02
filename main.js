@@ -1,6 +1,6 @@
 let input = document.querySelector('#input');
-let submitButton = document.querySelector('#submit');
-let result = document.querySelector('#result');
+let submitButton = document.querySelector('#submit')
+let result = document.querySelector('#result')
 
 submitButton.addEventListener('click', function() {
     let text = input.value;
@@ -13,7 +13,7 @@ function factorialize(num) {
     for (let i = 1; i <= num; i++) {
       count *= i;
     }
-    return count;
+    return count
   }
   
   factorialize(5);
@@ -32,13 +32,14 @@ function factorialize(num) {
       ownProps.push(property);
     }
   }
-  
 
+  
   //Inheritance
   function Cat(name) {
     this.name = name;
   }
   
+
   Cat.prototype = {
     constructor: Cat,
     eat: function() {
@@ -153,3 +154,11 @@ function nonMutatingConcat(original, attach) {
 const first = [1, 2, 3];
 const second = [4, 5];
 nonMutatingConcat(first, second);
+
+
+//sum all numbers in range
+function sumAll(arr) {
+  return 1;
+}
+
+sumAll([1, 4]);
