@@ -162,3 +162,20 @@ function sumAll(arr) {
 }
 
 sumAll([1, 4]);
+
+//sum all numbers
+function sumAll(arr) {
+  // Сортуємо масив
+  arr.sort(function(a, b) {
+    return a - b;
+  });
+
+  let sum = 0;
+  for (let i = arr[0]; i <= arr[1]; i++) {
+    sum += i;
+  }
+
+  return sum;
+}
+
+console.log(sumAll([4,1])); // Виводить: 10
